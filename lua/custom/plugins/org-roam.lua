@@ -9,7 +9,7 @@ return {
   },
   config = function()
     require('org-roam').setup {
-      directory = { '~/org-roam-files' },
+      directory = '~/org-roam-files',
       -- optional
       org_files = {
         '~/another_org_dir',
