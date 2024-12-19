@@ -1,3 +1,6 @@
+vim.opt.conceallevel = 2
+vim.opt.concealcursor = 'nc'
+
 return {
   'chipsenkbeil/org-roam.nvim',
   tag = '0.1.1',
@@ -9,12 +12,20 @@ return {
   },
   config = function()
     require('org-roam').setup {
-      directory = { '~/org-roam-files' },
+      directory = '~/org-roam/files',
       -- optional
       org_files = {
-        '~/another_org_dir',
-        '~/some/folder/*.org',
-        '~/a/single/org_file.org',
+        '~/org-files/',
+        '~/Dropbox/phone-org-files/*',
+      },
+      database = {
+        persist = true,
+        path = 'c:/users/shawn/org-roam/db/db',
+      },
+      ui = {
+        node_buffer = {
+          unique = true,
+        },
       },
     }
   end,
