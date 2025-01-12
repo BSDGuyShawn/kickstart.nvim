@@ -12,15 +12,16 @@ return {
   },
   config = function()
     require('org-roam').setup {
-      directory = '~/org-roam/files',
+      directory = 'z:/org-roam/files',
       -- optional
       org_files = {
         '~/org-files/',
         '~/Dropbox/phone-org-files/*',
+        'z:/org-files/',
       },
       database = {
         persist = true,
-        path = 'c:/users/shawn/org-roam/db/db',
+        path = 'z:/org-roam/db/db',
       },
       ui = {
         node_buffer = {
